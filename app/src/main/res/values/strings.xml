@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DBD Randomizer</string>
+    <string name="survivor">Survivor</string>
+    <string name="killer">Killer</string>
+    <string name="back">back</string>
+    <string name="bbq_and_chili">BBQ and Chili</string>
+    <string name="bitter_murmur">Bitter Murmur</string>
+    <string name="blood_echo">Blood Echo</string>
+    <string name="beast_of_prey">Beast Of Prey</string>
+    <string name="roll">Roll</string>
+    <string name="portrait_of_killer">portrait of killer</string>
+    <string name="image_of_perk_1">image of perk 1</string>
+    <string name="image_of_perk_2">image of perk 2</string>
+    <string name="image_of_perk_3">image of perk 3</string>
+    <string name="image_of_perk_4">image of perk 4</string>
+    <string name="ace_in_the_hole">Ace in the Hole</string>
+    <string name="adrenaline">Adrenaline</string>
+    <string name="aftercare">Aftercare</string>
+    <string name="alert">Alert</string>
+</resources>

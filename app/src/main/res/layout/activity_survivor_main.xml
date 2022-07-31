@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".killer_main"
+    android:background="@color/colorBackground">
+
+    <Button
+        android:id="@+id/surv_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/survivor"
+        android:layout_width="193dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/portrait_of_killer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277"
+        app:srcCompat="@drawable/surv_dwight"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/survPerkSlot1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="75dp"
+        android:contentDescription="@string/image_of_perk_1"
+        app:layout_constraintEnd_toStartOf="@+id/survPerkSlot2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survivor"
+        app:srcCompat="@drawable/iconperks_aceinthehole" />
+
+    <ImageView
+        android:id="@+id/survPerkSlot2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-60dp"
+        android:contentDescription="@string/image_of_perk_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/survivor"
+        app:layout_constraintTop_toBottomOf="@+id/survivor"
+        app:srcCompat="@drawable/iconperks_adrenaline" />
+
+    <ImageView
+        android:id="@+id/survPerkSlot3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image_of_perk_3"
+        app:layout_constraintEnd_toStartOf="@+id/survRollButton"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survRollButton"
+        app:srcCompat="@drawable/iconperks_aftercare" />
+
+    <ImageView
+        android:id="@+id/survPerkSlot4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image_of_perk_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toEndOf="@+id/survRollButton"
+        app:layout_constraintTop_toBottomOf="@+id/survRollButton"
+        app:srcCompat="@drawable/iconperks_alert" />
+
+    <TextView
+        android:id="@+id/perk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/ace_in_the_hole"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/survRollButton"
+        app:layout_constraintEnd_toEndOf="@+id/survPerkSlot1"
+        app:layout_constraintStart_toStartOf="@+id/survPerkSlot1"
+        app:layout_constraintTop_toBottomOf="@+id/survPerkSlot1" />
+
+    <TextView
+        android:id="@+id/perk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/aftercare"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/survPerkSlot3"
+        app:layout_constraintStart_toStartOf="@+id/survPerkSlot3"
+        app:layout_constraintTop_toBottomOf="@+id/survPerkSlot3" />
+
+    <TextView
+        android:id="@+id/perk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/alert"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/survPerkSlot4"
+        app:layout_constraintStart_toStartOf="@+id/survPerkSlot4"
+        app:layout_constraintTop_toBottomOf="@+id/survPerkSlot4" />
+
+    <TextView
+        android:id="@+id/perk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/adrenaline"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/survRollButton"
+        app:layout_constraintEnd_toEndOf="@+id/survPerkSlot2"
+        app:layout_constraintStart_toStartOf="@+id/survPerkSlot2"
+        app:layout_constraintTop_toBottomOf="@+id/survPerkSlot2" />
+
+    <Button
+        android:id="@+id/survRollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/survPerkSlot2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

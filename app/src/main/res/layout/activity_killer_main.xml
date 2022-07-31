@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".killer_main"
+    android:background="@color/colorBackground">
+
+    <Button
+        android:id="@+id/killer_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/killer"
+        android:layout_width="193dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="200dp"
+        android:contentDescription="@string/portrait_of_killer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.277"
+        app:srcCompat="@drawable/kill_trapper"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/perkSlot1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="75dp"
+        android:contentDescription="@string/image_of_perk_1"
+        app:layout_constraintEnd_toStartOf="@+id/perkSlot2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/killer"
+        app:srcCompat="@drawable/kiconperks_bbqandchili" />
+
+    <ImageView
+        android:id="@+id/perkSlot2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-60dp"
+        android:contentDescription="@string/image_of_perk_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/killer"
+        app:layout_constraintTop_toBottomOf="@+id/killer"
+        app:srcCompat="@drawable/kiconperks_beastofprey" />
+
+    <ImageView
+        android:id="@+id/perkSlot3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/image_of_perk_3"
+        app:layout_constraintEnd_toStartOf="@+id/rollButton"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollButton"
+        app:srcCompat="@drawable/kiconperks_bittermurmur" />
+
+    <ImageView
+        android:id="@+id/perkSlot4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/image_of_perk_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toEndOf="@+id/rollButton"
+        app:layout_constraintTop_toBottomOf="@+id/rollButton"
+        app:srcCompat="@drawable/kiconperks_bloodecho" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/bbq_and_chili"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rollButton"
+        app:layout_constraintEnd_toEndOf="@+id/perkSlot1"
+        app:layout_constraintStart_toStartOf="@+id/perkSlot1"
+        app:layout_constraintTop_toBottomOf="@+id/perkSlot1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/bitter_murmur"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/perkSlot3"
+        app:layout_constraintStart_toStartOf="@+id/perkSlot3"
+        app:layout_constraintTop_toBottomOf="@+id/perkSlot3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/blood_echo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/perkSlot4"
+        app:layout_constraintStart_toStartOf="@+id/perkSlot4"
+        app:layout_constraintTop_toBottomOf="@+id/perkSlot4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/beast_of_prey"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rollButton"
+        app:layout_constraintEnd_toEndOf="@+id/perkSlot2"
+        app:layout_constraintStart_toStartOf="@+id/perkSlot2"
+        app:layout_constraintTop_toBottomOf="@+id/perkSlot2" />
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/perkSlot2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
